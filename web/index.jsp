@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Insert Page</title>
+        <title>Simple Salary Calculator</title>
     </head>
     <body>
         <h1>Simple Salary Calculator</h1>
