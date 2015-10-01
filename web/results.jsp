@@ -6,6 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Salary Info</title>
+        <link rel="stylesheet" type="text/css" href="Styling.css"/>
     </head>
     
     <%
@@ -43,66 +44,68 @@
     %>
     
     <body>
+        <fmt:setLocale value="en_US"/>
+        <fmt:formatNumber value="0.00" type="CURRENCY">
         <h1>Salary Info</h1>
         
         <table border="1">
             <tbody>
                 <tr>
                     <td>Total Hours Worked:</td>
-                    <td><%= TotalHoursWorked %></td>
+                    <td class="Display"><%= TotalHoursWorked %></td>
                 </tr>
                 
                 <tr>
                     <td>Hourly Rate:</td>
-                    <td><%= HourlyRate %></td>
+                    <td class="Display"><%= HourlyRate %></td>
                 </tr>
                 
                 <tr>
                     <td># Hours Overtime:</td>
-                    <td><%= OverWorksHours %></td>
+                    <td class="Display"><%= OverWorksHours %></td>
                 </tr>
 
                 <tr>
                     <td>Overtime Hourly Rate:</td>
-                    <td><%= OverWorksRate %></td>
+                    <td class="Display"><%= OverWorksRate %></td>
                 </tr>
                 
                 <tr>
                     <td>Gross Pay:</td>
-                    <td><%= GrossPay %></td>
+                    <td class="Display"><%= GrossPay %></td>
                 </tr>
                 
                 <tr>
                     <td>Pre-tax Deduct:</td>
-                    <td><%= PreTaxDeduct %></td>
+                    <td class="Display"><%= PreTaxDeduct %></td>
                 </tr>
                
                 <tr>
                     <td>Pre-tax Pay:</td>
-                    <td><%= PreTaxPay %></td>
+                    <td class="Display"><%= PreTaxPay %></td>
                 </tr>
 
                 <tr>
                     <td>Tax Amount:</td>
-                    <td><%= TaxAmount %></td>
+                    <td class="Display"><%= TaxAmount %></td>
                 </tr>
                 
                 <tr>
                     <td>Post-tax Pay:</td>
-                    <td><%= PostTaxPay %></td>
+                    <td class="Display"><%= PostTaxPay %></td>
                 </tr>
                 
                 <tr>
                     <td>Post-tax Deduct:</td>
-                    <td><%= PostTaxDeduct %></td>
+                    <td class="Display"><%= PostTaxDeduct %></td>
                 </tr>
                 
                 <tr>
                     <td>Net Pay:</td>
-                    <td><%= NetPay %></td>
+                    <td class="Display"><%= NetPay %></td>
                 </tr>              
             </tbody>
         </table>
-        
+        </fmt:formatNumber>
     </body>
 </html>
